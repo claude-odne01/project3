@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body class="body-background">
+
+     <h1 class="h1-font">GUESS MY NUMBER</h1>
+     <h4 class="h4-font"><em>Guess the number between 1 and 100</em></h4>
+     
+     <div class="game-box">
+          <div class="align-space-between">
+               <div class="score-box">
+                    <p id="score">Score: 10</p>
+                    <p id="highscore">High Score: 0</p>
+               </div>
+          
+               <input class="reset-btn" id="resetBtn" type="button" value="Reset"">
+          </div>
+          
+          <div class="align-vertically play-box">
+               <div>
+                    <img id="playerimage" src="img/player.png" alt="player" class="image-box">
+               </div>
+               
+               <div>
+                    <input class="guess-box" id="uGuess" type="number" name="uGuess" min="1" max="100" placeholder="1" value="1" step="1" required>
+               </div>
+               
+               <div>
+                    <input class="guess-btn" type="button" id="guessBtn" value="Check">
+               </div>
+               
+               <div>
+                    <p id="winscript" style="font-size:24px; font-weight: bold;"></p>
+                    <p id="winscript1" style="font: size 20px;"></p>
+                    <p id="winscript2"></p>
+                    <p id="winscript3"></p>
+                    <p id="hint1" style="color:black; font-size:large; height: 25px;">Guess a Number</p>
+               </div>
+          </div>
+          <div>
+               <p class="game-history-box" style="font-size: large">Game History:</p>
+               <p id="game1"></p>
+               
+          </div>
+     </div>
+          
+     <script src="scripts.js"></script>
+</body>
+</html>
