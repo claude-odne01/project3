@@ -28,7 +28,7 @@ function resetGame () {
      let newRandomNumber = generateRandomInteger(100);
      randomnumber = newRandomNumber;
      
-     document.getElementById("playerimage").src = "img/player.png";
+     document.getElementById("playerimage").src = "player.png";
      document.getElementById("uGuess").defaultValue = 1;
      
      alert( 'Generating a New Secret Number :)' );
@@ -68,7 +68,7 @@ function verifyGuess() {
           winmsg2.innerHTML = `<span style="font-size: 20px; font-weight: bold">Your Score: ${userScore}</span>`;
           winmsg3.innerHTML = `<span style="font-weight: bold;">High Score: ${highScore}</span>`;
           
-          document.getElementById("playerimage").src = "img/win.jpg";
+          document.getElementById("playerimage").src = "win.jpg";
           hideFunction()
 
      }
@@ -88,7 +88,7 @@ function verifyGuess() {
           }
           else {
                update();
-               document.getElementById("playerimage").src = "img/loss.jpg";
+               document.getElementById("playerimage").src = "loss.jpg";
                winmsg.innerHTML = 'Unfortunately you lost the game...';
                winmsg1.innerHTML = `Don't Give Up and Try Again. You can win next time.`;
                winmsg2.innerHTML = `My number was: <span style="font-size: 20px; font-weight: bold"> ${randomnumber}</span>`;
